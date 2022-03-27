@@ -15,6 +15,7 @@ public class TV {
 	public TV (Marca marca, boolean estado) {
 		this.marca = marca;
 		this.estado = estado;
+		numTV++;
 	}
 	
 	// Getters & Setters
@@ -53,10 +54,10 @@ public class TV {
 		this.canal = canal;
 	}
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
-	public void setNumTV(int numTv) {
+	public static void setNumTV(int numTv) {
 		TV.numTV = numTv;
 	}
 	
